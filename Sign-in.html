@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Sign-in Page</title>
+        <link href="sign-in.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+
+        <div class="sign-in-box">
+            <div class="top-bar">
+                <h1 style="color: rgb(36, 36, 240); font-size: xx-large; font-weight: 900;">Sign in</h1>
+                <i class="fa-solid fa-x" style="color:rgb(36, 36, 240)"></i>
+            </div>
+
+            <hr>
+
+            <div class="main-box">
+                <div class="left-box">
+                    <input id="username" name="username" type="text" placeholder="Username" required/>
+                    <input id="password" name="password" type="password" placeholder="Password" required/>Forgot password? <a href="#" target="_blank">Click here to restore</a>
+                    <div class="login-box">
+                        <button>Login</button>
+                        <div class="_checkboxes">
+                            <label for="checkboxes">Show Password<input id="checkboxes" type="checkbox"/></label>
+                            <label for="checkboxes">Remember me<input id="checkboxes" type="checkbox"/></label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vertical-line"></div>
+
+                <div class="right-box">
+                    <p style="font-style: italic; font-size: 16px; font-family: 'Times New Roman', Times, serif;">You can also login with your social account</p>
+
+                    <div class="socials">
+                        <button class="facebook">
+                            <i class="fa-brands fa-facebook" style="color: rgb(51, 122, 214);"></i>
+                            <p>Facebook</p>
+                        </button>
+                        <button class="twitter">
+                            <i class="fa-brands fa-square-twitter" style="color: rgb(51, 122, 214);"></i>
+                            <p>Twitter</p>
+                        </button>
+                        <button class="google">
+                            <i class="fa-brands fa-google" style="color: rgb(51, 122, 214);"></i>
+                            <p>Google</p>
+                        </button>
+                    </div>
+
+                    <p style="font-size: larger; font-style: italic;">Or use your OpenID to login</p>
+
+                    <div class="open-id"><input name="open-id" id="open-id" type="text" placeholder="Your OpenID" /><button>Go</button> </div>
+                    <p style="font-style: italic; font-family: 'Times New Roman', Times, serif; width: 60%; font-size: 14px;">You may need to disable any popup blockers to login with above site</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="bottom-bar">
+                <p>Not registered? <a href="#" target="_blank">Register now!</a></p>
+            </div>
+        </div>
+
+    </body>
+
+</html>

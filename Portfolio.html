@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Portfolio</title>
+        <link href="Portfolio.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <section id="home">
+            <nav class="nav-bar">
+                <h2 style="color: white;">MyPortfolio.</h2>
+    
+                <ul class="sections">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project-block">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="banner-content">
+                <h1 style="font-size: 100px; font-family: 'Belleza', sans-serif; font-weight: 400; font-style: normal; padding: 50px;">Aniqa Azhar</h1>
+                <h3 style="font-size: 30px;">Junior at FAST NUCES</h3>
+            </div>
+
+            <div class="down-button">
+                <button onclick="location.href='#about'"><i class="fa-solid fa-angle-down" style="color:white;"></i></button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 style="margin-bottom: 50px; font-size: 40px; font-family: 'Belleza', sans-serif; font-weight: 400; font-style: normal;">About me</h2>
+            <p style="font-size: larger;">I am currently pursuing bachelors in computer science and exploring the fields of web development and AI. My academic journey has equipped me with a solid foundation in various programming languages like C/C++, Python, HTML, CSS, and Javascript.</p>
+            <button class="resume" onclick="window.open('./img/Resume_.pdf')">Download Resume</button>
+        </section>
+
+        <section id="project-block">
+            <h2 style="margin-bottom: 50px; font-size: 40px; font-family: 'Belleza', sans-serif; font-weight: 400; font-style: normal;">Projects</h2>
+            <div class="projects">
+                <div>
+                    <img src="./img/to-do.jpg" alt="to-do"/>
+                    <p class="project-info">A web application created using HTML, CSS, and JavaScript for managing to-dos with features including creating, editing, crossing off, and deleting to-dos</p>
+                    <p>TO DO Web App</p>
+                </div>
+                <div>
+                    <img src="./img/e-commerce.jpg" alt="ecommerce"/>
+                    <p class="project-info">A C++ program which utilizes data structures to develope an efficient order management and delivery system for an online shop</p>
+                    <p>Ecommerce Program</p>
+                </div>
+                <div>
+                    <img src="./img/hotel-management.jpg" alt="hotel management"/>
+                    <p class="project-info">A comprehensive program in C++ that utilizes OOP concepts to manage various hotel activities</p>
+                    <p>Hotel Management Program</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 style="font-size: 40px; font-family: 'Belleza', sans-serif; font-weight: 400; font-style: normal;">Contact</h2>
+            <div class="icons">
+                <div class="gmail">
+                    <i class="fa-brands fa-google" style="color: white; font-size: 30px;"></i>
+                    <h5>aniqaazhar99@gmail.com</h5>
+                </div>
+                <a href="https://github.com/Aniqa990" target="_blank">
+                    <div class="github">
+                    <i class="fa-brands fa-github" style="color:white; font-size: 30px;"></i>
+                    <h5>github.com/aniqa990</h5>
+                    </div>
+                </a>
+                <div class="phone">
+                    <i class="fa-solid fa-phone" style="color:white; font-size: 30px;"></i>
+                    <h5>+92 334 2221019</h5>
+                </div>
+
+                <a href="linkedin.com/in/aniqa-azhar" target="_blank">
+                    <div class="linkedin">
+                        <i class="fa-brands fa-linkedin" style="color:white; font-size: 30px;"></i>
+                        <h5>linkedin.com/in/aniqa-azhar</h5>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            Copyright &#169; 2024 Aniqa Azhar
+        </footer>
+
+    </body>
+
+    </html>

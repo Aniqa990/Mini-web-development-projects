@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: #020f20;
+}
+
+nav h2{
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+    color: rgb(167, 163, 163);
+    font-size: xx-large;
+}
+
+header{
+    background-color: black;
+}
+
+header p{
+    color:white;
+    text-align: center;
+    padding: 15px;
+}
+
+.discount{
+    color: rgb(223, 14, 49);
+    text-transform: uppercase;
+}
+
+.sec-1{
+    height: 470px;
+}
+
+.sec-1 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-text{
+        width: 45%;
+        height: 460px;
+        position: absolute;
+        top: 22%;
+        right: 20px;
+        text-align: center;
+        color: white;
+        background-color: rgba(44, 43, 43, 0.55);
+        align-content: center;
+        padding: auto 30px;
+}
+
+.banner-text h1{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: oblique;
+    font-size: 40px;
+}
+
+.banner-text p{
+    font-size: 17px;
+}
+
+.banner-text hr{
+    width: 80%;
+    margin-left: 10%;
+}
+
+button{
+    padding: 10px;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: gray;
+    color: white;
+}
+
+button:hover{
+    background-color: white;
+    color: gray;
+}
+
+.sec-2{
+    color: rgb(167, 163, 163);
+    background-color: black;
+    padding: 70px 30px;
+}
+
+.columns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+    padding: 50px 30px;
+    
+}
+
+.columns div{
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.columns div>img {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+.columns div>h3{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: oblique;
+    font-size: 1.5rem;
+}
+
+.columns div>p{
+    font-size: 15px;
+}
+
+.logos{
+    background-color:rgb(167, 163, 163);
+    overflow: hidden;
+    position: relative;
+    padding:25px 0px;
+    white-space: nowrap;
+}
+
+.sliding-animation{
+    display: flex;
+    align-items: center;
+    animation: 25s slide infinite linear;
+}
+
+.sliding-animation img{
+    margin: 0px 50px;
+}
+
+.logos:hover .sliding-animation{
+    animation-play-state: paused;
+}
+
+.sliding-animation img:hover{
+    transform:scale(1.2);
+}
+
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform:translateX(-100%)
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #020f20;
+    color: rgb(167, 163, 163);
+    padding: 15px;
+}
+
+.socials i{
+    font-size: 25px;
+    margin-right: 15px;
+}

@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+  }
+  
+  .marker {
+    background-color: red;
+    width: 200px; /*Notice that your marker doesn't seem to have any color. The background color was actually applied, but since the marker div element is empty, it doesn't have any height by default.
+  In your .marker CSS rule, set the width property to 200px and the height property to 25px.*/
+    height: 25px;
+    margin: 10px auto; /*When the shorthand margin property has two values, it sets margin-top and margin-bottom to the first value, and margin-left and margin-right to the second value.*/
+
+  }
+  .container{
+    background-color: rgb(0, 0, 0); /*There are two main color models: the additive RGB (red, green, blue) model used in electronic devices, and the subtractive CMYK (cyan, magenta, yellow, black) model used in print.
+    In this project, you'll work with the RGB model. This means that colors begin as black, and change as different levels of red, green, and blue are introduced. An easy way to see this is with the CSS rgb function.*/
+    padding: 10px 0; /*In the .container CSS rule, use the shorthand padding property to add 10px of top and bottom padding, and set the left and right padding to 0. This works similarly to the shorthand margin property you used earlier.*/
+  }
+  /*A very common way to apply color to an element with CSS is with hexadecimal or hex values. While hex values sound complicated, they're really just another form of RGB values.
+Hex color values start with a # character and take six characters from 0-9 and A-F. The first pair of characters represent red, the second pair represent green, and the third pair represent blue. For example, #4B5320.
+In the .green CSS rule, set the background-color property to a hex color code with the values 00 for red, FF for green, and 00 blue. You may already be familiar with decimal, or base 10 values, which go from 0 - 9. Hexadecimal, or base 16 values, go from 0 - 9, then A - F:
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+With hex colors, 00 is 0% of that color, and FF is 100%. So #00FF00 translates to 0% red, 100% green, and 0% blue, and is the same as rgb(0, 255, 0).
+Lower the intensity of green by setting green value of the hex color to 7F.
+
+The HSL color model, or hue, saturation, and lightness, is another way to represent colors.
+The CSS hsl function accepts 3 values: a number from 0 to 360 for hue, a percentage from 0 to 100 for saturation, and a percentage from 0 to 100 for lightness.
+If you imagine a color wheel, the hue red is at 0 degrees, green is at 120 degrees, and blue is at 240 degrees.
+Saturation is the intensity of a color from 0%, or gray, to 100% for pure color.
+Lightness is how bright a color appears, from 0%, or complete black, to 100%, complete white, with 50% being neutral.
+In the .blue CSS rule, use the hsl function to change the background-color property to pure blue. Set the hue to 240, the saturation to 100%, and the lightness to 50%.
+
+Step 49: You've learned a few ways to set flat colors in CSS, but you can also use a color transition, or gradient, on an element.
+A gradient is when one color transitions into another. The CSS linear-gradient function lets you control the direction of the transition along a line, and which colors are used.
+One thing to remember is that the linear-gradient function actually creates an image element, and is usually paired with the background property which can accept an image as a value.
+In the .red CSS rule, change the background-color property to background.*/

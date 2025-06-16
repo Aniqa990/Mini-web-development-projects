@@ -1,0 +1,228 @@
+<!DOCTYPE html> 
+<html>
+    
+<head>
+    <title>MY APPLE WEBSITE</title> <!--tells tab name-->
+    <meta charset="UTF-8"> <!--Tell the browser to encode multiple languages -->
+    <meta name="description" content="an apple website where we sell top quality apples">
+    <meta name="author" content="Aniqa Azhar">
+    <meta name="keywords" content="apples, top quality, local"> <!--add as many as you can so people land on our website-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/d5d07fc8ca.js"></script>
+</head>
+
+
+<body>
+    <script src="main.js"></script>
+    <header>
+        <h1 title="lemon">APPLES</h1>
+        <h1 title="lemon">Second heading</h1>
+        <link rel="stylesheet" href="style.css">
+    </header>
+
+    <main>
+       <div>
+        <h2 class="red"> Green Apples</h2>
+        <p>Green apples are very sweet and juicy</p>
+        <p>They are found in New Zealand</p>
+        </div>
+        <br>
+        <hr>
+
+
+        <div>
+        <h2 class="green">Red Apple</h2>
+        <p>Red apples are very sweet and juicy</p>
+        <p>They are found in Pakistan</p>
+        </div>
+        <br>
+        <hr>
+
+
+
+    <ol type="A" reversed start="5">
+
+    <li>hi</li><!-- bullet point list-->
+    <li>hi</li>
+
+    </ol>
+
+    <ul>
+       <li>hi</li>
+       <li>no</li>
+        
+    </ul>
+
+    <div>
+        <p>First</p>
+        <p>Second</p>
+        <p>third</p>
+    </div>
+
+
+
+
+        <b> i am bold</b><!--Making text bold-->
+        <br><br>
+        <i> I am italics</i>
+        <br><br>
+
+
+
+        H<sub>2</sub>O
+        <br><br>
+        <big>Hello</big>
+        <br><br>
+        <small>Small</small>
+        <br><br>
+
+
+       10 <sup>2</sup>
+       <br><br>
+
+
+       <a href="https://www.facebook.com/" target="_blank">My Link</a>
+       <br><br>
+
+       <p class="gradient">Gradient</p>
+       <br><br><br></br>
+    
+       <img class="apple_jpg" src="apple.jpg" alt="Apple Picture">
+      
+       <br><br>
+       <video src="video.mp4"></video>
+
+
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/N_Qh1UFt4_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <br><br>
+
+
+       <table>
+           <tr>
+               <th> ROW 1 </th>
+               <td>R1C1</td>
+               <td>R1C2</td>
+               <td>R1C3</td>
+           </tr>
+           <tr>
+               <th>ROW 2</th>
+               <td>R2C1</td>
+               <td>R2C2</td>
+               <td>R2C3</td>
+           </tr>
+       </table>-->
+
+
+
+       <h1>FORMS</h1>
+       <form>
+           <h3>Full Name</h3>
+           <input type="text" placeholder="Aniqa Azhar">  <!--The input element allows you several ways to collect data from a web form. Like img elements, input elements are self-closing and do not need closing tags.-->
+           <br>
+           <h3>Email</h3>
+           <input type="email"> <!--In order for a form's data to be accessed by the location specified in the action attribute, you must give the text field a name attribute and assign it a value to represent the data being submitted. For example, you could use the following syntax for an email address text field: <input type="text" name="email">.-->
+           <br>
+           <h3>Password</h3>
+           <input type="password">
+           <br>
+           <h3>Phone Number</h3>
+           <input type="number">
+           <br>
+           <h3>Age</h3>
+           <input type="number" min="18" value="20">  <!--value is default value that is already there-->
+           <br><br>
+           <input type="hidden">
+           <input type="checkbox">multiple
+           <br>
+           <input type="radio" name="gender"> male  <!--Notice that both radio buttons can be selected at the same time. To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.-->
+           <input type="radio" name="gender"> female
+           <input type="radio" name="gender"> other
+           <br>
+           <br>
+           <br>
+           <!--If you select the Indoor radio button and submit the form, the form data for the button is based on its name and value attributes. Since your radio buttons do not have a value attribute, the form data will include indoor-outdoor=on, which is not useful when you have multiple buttons.
+            Add a value attribute to both radio buttons. For convenience, set the button's value attribute to the same value as its id attribute.
+            Like radio buttons, form data for selected checkboxes are name / value attribute pairs. While the value attribute is optional, it's best practice to include it with any checkboxes or radio buttons on the page.
+        
+            <label><input id="indoor" value="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+          <label><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label>   
+           
+           The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line.
+           Nest the Indoor and Outdoor radio buttons within a fieldset element, and don't forget to indent the radio buttons
+           
+           The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.
+           Add a legend element with the text Is your cat an indoor or outdoor cat? above both of the radio buttons..
+        
+           If you want one of the options in radio or checkbox checked before, put a checked attribute in the input element spaced apart from other attributes-->
+
+
+
+           <h3>Rate the quality of product</h3>
+           <input type="range">
+           For tags website is w3schools.com
+           <br><br>
+           <!--The action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form> tells the browser that the form data should be sent to the path /submit-url.-->
+           <!--To prevent a user from submitting your form when required information is missing, you need to add the required attribute to an input element. There's no need to set a value to the required attribute. Instead, just add the word required to the input element, making sure there is space between it and other attributes.-->
+        
+
+           <button>Order Now</button>  <!--The default behavior of clicking a form button without any attributes submits the form to the location specified in the form's action attribute.-->
+           <!--The button you added will submit the form by default. However, relying on default behavior may cause confusion. Add the type attribute with the value submit to the button to make it clear that it is a submit button.-->
+           <!--label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers). For example, <label><input type="radio"> cat</label> makes it so clicking the word cat also selects the corresponding radio button.
+            There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute. <input id="loving" type="checkbox"> <label for="loving">Loving</label>-->
+           <!--The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page. When elements have multiple attributes, the order of the attributes doesn't matter.   <label><input type="radio" id="indoor"> Indoor</label>-->
+           <br>
+           <br>
+           <br>
+        </form>
+
+        <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook"></i></a>
+
+        <br><br><br><br><br><br>
+        <button id="button">Button</button>
+        <br><br><br>
+
+        <h3>CSS Selectors</h3>
+        <p>White</p>
+        <br><br><br>
+        <p>Black</p>
+
+
+        <table>
+            <tr>
+                <td>First</td>
+                <td>Second</td>
+                <td>Third</td>
+            </tr>
+            <tr>
+                <td>First</td>
+                <td>Second</td>
+                <td>Third</td>
+            </tr>
+        </table>
+
+        <span>      hello    world    hi   </span>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+</body>
+
+</html>

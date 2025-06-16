@@ -1,0 +1,114 @@
+*{
+    background-color:turquoise;
+  }
+  
+  h1 {
+  color:whitesmoke;
+  }
+  #heading /*# represents id*/ {
+    background-color: rgb(235, 35, 68);
+    color:violet;
+    border: solid 5px black;
+    border-radius: 10px;
+    text-align: center;
+    font-family:cursive;
+    font-weight:100;
+    font-size: xx-large;
+    position:relative;
+    left: 130px;
+    text-shadow:5px 5px 5px grey;
+    text-decoration-color: hotpink;
+  }
+  h2 {
+      color:red;
+  }
+  .yellow /*. represents a class*/{
+    color:yellow;
+  }
+  .green{
+    color:rgb(27, 199, 56);
+  }
+  .apple_jpg {
+    border: dotted 5px black;
+    border-radius: 10px;
+    padding-top:5px;     /*(distance between brd and ime) (or you can do 15px 5px 5px 5px (top right bottom left like a clock)if you want different padding between bordetrs)*/
+    margin-left: 235px;  /*or  (0 0 0 235)  (distance above and below ime)(move pic towards centre by moving to right by increasing margin from left)*/
+    width: 200px;
+    height: auto;
+    float: left; /*it wraps your text around the image*/
+    /*position:relative;
+    bottom: 690px ;
+    left: 0px*/
+  }
+  
+    
+    li:last-child  /*(also only child nth child())*/
+      {color: white; }
+  li:nth-child(1)
+  { color: white; }
+  p:nth-child(3)
+  {color: white}
+  
+  #button{
+    margin-left: 200px;
+    padding: 30px;
+    width: 200px;
+    background-color: royalblue;
+    color: white;
+    font-size: x-large;
+    border: 2px solid darkblue;
+    border-radius: 8%;
+    font-family: cursive;
+    font-weight: bold;
+    font-variant: small-caps;
+    box-shadow:5px 5px 5px black;  /*wont work unless you put width and height too behind color. the third is how blur you want*/
+    opacity: 0.9;
+  
+  }
+  #button:hover{
+    background-color: navy;
+    color: red;
+    width:200px;
+    height:auto;
+  }
+  
+  ul > li {
+    color: white;
+  }
+  
+  h3 + p  /*if you select only p then all p tags will be colored while we only want tag after h3*/ {
+    color: white;
+  }
+  
+  /*do search up ancestors and descendors and parent and child*/
+  
+  /*attribute selector*/
+  h1[title*="lemon"] /*purpose is to select all same headings without adding class*/ /*also we added * after title so that in html even if title is lemon of one ans lemons of another but our title is lemon so the lemons one will also be selected since it contains the word lemon*/ {
+    color: white;
+  }
+  
+  table{
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse:collapse;
+  }
+  
+  td {
+    border: 1px solid black;
+    padding:5px;
+  }
+  
+  
+  tr{
+    border: 1px solid black;
+    padding: 5px
+  }
+  
+  .gradient{
+    background-image:linear-gradient(to right, aqua, blue, violet, purple );  /*or to up, down left and for diagonally 45deg or smthn*/ /*also radial,repeating-linear gradient(for this add pecentage after every color)*/
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+  }

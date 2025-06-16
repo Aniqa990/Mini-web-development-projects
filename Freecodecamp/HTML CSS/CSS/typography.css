@@ -1,0 +1,146 @@
+
+/*margin is space between div and rest of the page. Padding is the pace bw the content inside the div and the div container.*/
+
+
+
+/*minus in margin might be down and left*/
+
+
+
+
+* {
+  box-sizing: border-box;
+
+  /*If you inspect your .label element with your browser's developer tools, you may notice that it's actually 288 pixels wide instead of 270. This is because, by default, the browser includes the border and padding when determining an element's size.
+To solve this, reset the box model by creating a * selector and giving it a box-sizing property of border-box.*/
+
+
+}
+
+html {
+  font-size: 16px;
+}
+
+/*Create a body selector and give it a font-family set to Open Sans with a fallback of sans-serif. Remember that fonts with spaces in the name must be wrapped in quotes for CSS.*/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.label {
+  border: 2px solid black;
+  width: 270px;
+  margin: 20px auto;
+  padding: 0 7px;
+}
+
+header h1 {
+  text-align: center;
+  margin: -4px 0;
+  letter-spacing: 0.15px /*The letter-spacing property can be used to adjust the space between each character of text in an element*/
+}
+
+p {
+  margin: 0;
+  display: flex; /*Now we can add the horizontal spacing using flex. In your p selector, add a display property set to flex and a justify-content property set to space-between.*/
+  justify-content: space-between;
+}
+
+.divider {
+  border-bottom: 1px solid #888989; /*Create a selector for your new .divider and set the border-bottom property to 1px solid #888989. Also give it a top and bottom margin of 2px. It should not have any left or right margin*/
+  margin: 2px 0;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+/*Create a new .large selector and give it a height property set to 10px. Also create an .large, .medium selector and set the background-color property to black*/
+.large {
+  height: 10px;
+}
+
+.large, .medium {
+  background-color: black;
+
+  /*You may notice there is still a small border at the bottom of your .large element. To reset this, give your .large, .medium selector a border property set to 0.
+Note: the medium(medium) class will be utilized later for the thinner bars of the nutrition label.*/
+
+  border: 0;
+}
+
+.medium {
+  height: 5px;
+}
+
+/*The rem unit stands for root em, and is relative to the font size of the html element.
+Create a .small-text selector and set the font-size to 0.85rem, which would calculate to roughly 13.6px (remember that you set your html to have a font-size of 16px).*/
+
+.small-text {
+  font-size: 0.85rem;
+}
+
+
+/*Create a new .calories-info selector and give it a display property set to flex. Also give it a justify-content property set to space-between and align-items property set to flex-end.*/
+
+.calories-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.calories-info h2 {
+  margin: 0;
+}
+
+.left-container p {
+  margin: -5px -2px;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.calories-info span {
+  margin: -7px -2px;
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.indent {
+  margin-left: 1em;
+}
+
+.double-indent {
+  margin-left: 2em;
+}
+
+/*Create a .daily-value p selector to target all of your p elements in the daily-value section. Give this new selector a border-bottom set to 1px solid #888989.*/
+
+/*The :not pseudo-selector can be used to select all elements that do not match the given CSS rule.
+
+div:not(#example) {
+  color: red;
+}
+The above selects all div elements without an id of example.
+
+Modify your .daily-value p selector to exclude the .no-divider elements.*/
+
+/*Now you will have to add separate dividers below your .no-divider elements.
+Your first .no-divider element has a .divider after it. Create another .divider after your second .no-divider element.*/
+
+
+.daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #888989;
+}
+
+/*Give the .note selector a left and right padding of 8px, removing the top and bottom padding. Also set the text-indent property to -8px.*/
+
+.note {
+  font-size: 0.6rem;
+  margin: 5px 0;
+  padding: 0 8px;
+  text-indent: -8px;
+}
+
